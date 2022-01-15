@@ -1,0 +1,655 @@
+    1  whoami
+    2  pwd
+    3  cd
+    4  cd/
+    5  cd /
+    6  clear
+    7  ls
+    8  cd usr/
+    9  ls
+   10  cd
+   11  cat > file1
+   12  ls
+   13  ls file1 >> file2
+   14  ls
+   15  cat file2
+   16  ls file1 > file2
+   17  ls
+   18  cat file2
+   19  cat file1 >> file2
+   20  cat file2
+   21  cat >>  file2
+   22  cat -n file2
+   23  clear
+   24  whatis cat
+   25  whatis ls
+   26  whatis rm
+   27  whatis rmdir
+   28  whatis useradd
+   29  whatis fdisk
+   30  man fdisk
+   31  info fdisk
+   32  fdisk --help
+   33  man ls
+   34  ls --help
+   35  clear
+   36  whatis fdisk
+   37  which fdisk
+   38  which cat
+   39  fdisk /dev/sda
+   40  exit
+   41  vi /etc/passwd
+   42  vim /etc/passwd
+   43  history
+   44  exit
+   45  cat > /etc/motd
+   46  cat > /etc/issue
+   47  cal 2022
+   48  cal 1947
+   49  cal 8 1947
+   50  cal 15 8 1947
+   51  cal 1897
+   52  cal 1700
+   53  cal 19  9 1700
+   54  bc
+   55  clear
+   56  whoami
+   57  who am i
+   58  who
+   59  w
+   60  clear
+   61  passwd
+   62  exit
+   63  useradd arich
+   64  passwd arich
+   65  su - arich
+   66  exit
+   67  startx
+   68  usermod -L arich
+   69  cat /etc/shadow
+   70  usermod -U arich
+   71  cat /etc/shadow
+   72  ls /home
+   73  cat /etc/passwd
+   74  userdel -d arich
+   75  userdel  arich
+   76  cat /etc/passwd
+   77  cat /etc/shadow
+   78  ls /home
+   79  cd /home
+   80  rmdir arich
+   81  rm -rf arich
+   82  ls
+   83  history
+   84  clear
+   85  useradd abc
+   86  passwd abc
+   87  passwd -d abc
+   88  clear
+   89  cat /etc/passwd
+   90  c
+   91  head /etc/passwd
+   92  head -n 2 /etc/passwd
+   93  head -3 /etc/passwd
+   94  cat /etc/passwd
+   95  cat -n /etc/passwd
+   96  tail /etc/passwd
+   97  tail -5 /etc/passwd
+   98  tail -1 /etc/passwd
+   99  clear
+  100  exit
+  101  clear
+  102  echo $PATH
+  103  echo $SHELL
+  104  pwd
+  105  dfvxvd
+  106  ls
+  107  ls -l
+  108  ls -l -a
+  109  ls -l -a -h
+  110  ls -lah
+  111  ls -help
+  112  ls --help
+  113  clear
+  114  ls /
+  115  pwd
+  116  ls -la /
+  117  clear
+  118  pwd
+  119  pwdav
+  120  cat > wwww
+  121  cat wwww 
+  122  cat < wwww 
+  123  clear
+  124  echo "good afternoon"
+  125  echo "good afternoon" > test
+  126  cat test
+  127  echo "hello nice" >> test
+  128  cat test
+  129  cat < test
+  130  cat test | wc
+  131  cat > data
+  132  cat data 
+  133  more data 
+  134  less data 
+  135  clear
+  136  touch test{1,2,3,4}
+  137  ls
+  138  touch ssss{1..7}
+  139  ls
+  140  clear
+  141  touch aaa{1..5}{a..d}
+  142  ls
+  143  rm aaa{1..5}{a..d}
+  144  ls
+  145  rm -rf aaa{1..5}{a..d}
+  146  ls
+  147  rm -rf ssss{3..6}
+  148  ls
+  149  rm -rf bbb{1..5}-{x..z}
+  150  touch  bbb{1..5}-{x..z}
+  151  ls
+  152  mkdir ccc{12..20}
+  153  ls
+  154  tty
+  155  uptime
+  156  w
+  157  uptime
+  158  logname
+  159  exit
+  160  lastb
+  161  ifconfig
+  162  lastb
+  163  lastlog
+  164  lastb
+  165  lastlog
+  166  exit
+  167  hostnamectl set-hostname comp1.redhat.com
+  168  hostname
+  169  bc
+  170  exit
+  171  pwd
+  172  exit
+  173  pwd
+  174  exit
+  175  useradd user1
+  176  passwd user1
+  177  su -user1
+  178  su - user1
+  179  cat /etc/shadow
+  180  cat /etc/group
+  181  cat /etc/passwd
+  182  cat /etc/group
+  183  df
+  184  useradd -m -d /home/user2 -c "user2 arich" user2
+  185  passwd user2
+  186  tail -1 /etc/passwd
+  187  cat /etc/default/useradd 
+  188  useradd -D
+  189  useradd demo
+  190  tail /etc/passwd
+  191  tail /etc/group
+  192  tail /etc/shadow
+  193  tail /etc/gshadow
+  194  ls /home
+  195  userdel demo
+  196  tail /etc/passwd
+  197  tail /etc/group
+  198  tail /etc/shadow
+  199  tail /etc/gshadow
+  200  ls /home
+  201  rm -rf /home/demo
+  202  ls /home
+  203  userdel -r user2
+  204  ls /home
+  205  tail /etc/passwd
+  206  clear
+  207  useradd user3
+  208  passwd user3
+  209  tail -1  /etc/passwd
+  210  vi  /etc/passwd
+  211  grep user3 /etc/passwd
+  212  grep user2 /etc/passwd
+  213  grep user1 /etc/passwd
+  214  usermod -u 2001 user3
+  215  grep user3 /etc/passwd
+  216  usermod -c "employee in cts" user3
+  217  grep user3 /etc/passwd
+  218  mkdir /emp
+  219  usermod -d /emp/user3 user3
+  220  mkdir /emp/user3
+  221  grep user3 /etc/passwd
+  222  su user3
+  223  cp -rvp /etc/skel/*  /emp/user3
+  224  cd /etc/skel/
+  225  ls
+  226  ls -a
+  227  cp -rvp /etc/skel/.  /emp/user3
+  228  cd
+  229  su user3
+  230  echo $0
+  231  chsh -l
+  232  cat /etc/shells 
+  233  usermod -s /bin/csh user3
+  234  grep user3 /etc/passwd
+  235  su user3
+  236  usermod -l xyz3 user3
+  237  grep user3 /etc/passwd
+  238  su user3
+  239  su xyz3
+  240  usermod -L  user3
+  241  usermod -L  xyz3
+  242  tail -1 xyz3 /etc/shadow
+  243  tail -1  /etc/shadow
+  244  su xyz3
+  245  usermod -U  xyz3
+  246  tail -1  /etc/shadow
+  247  mkdir /emp/user4
+  248  useradd -m -d /emp/user4 -s /bin/tcsh -c "new user user4" -u 2002 user4
+  249  rm -rf /emp/user4
+  250  useradd -m -d /emp/user4 -s /bin/tcsh -c "new user user4" -u 2002 user4
+  251  userdel -r user4
+  252  useradd -m -d /emp/user4 -s /bin/tcsh -c "new user user4" -u 2002 user4
+  253  userdel xyz3
+  254  userdel -r user4
+  255  su user1
+  256  echo Hello > /etc/skel/welcome.txt
+  257  ls -la /etc/skel
+  258  useradd -m user7
+  259  passwd user7
+  260  su user7
+  261  su - user7
+  262  openssl passwd user7
+  263  tail /etc/shadow
+  264  useradd -m -p $(openssl passwd admin@123) user8
+  265  su user8
+  266  cat /etc/shadow
+  267  grep PASS /etc/login.defs 
+  268  vi /etc/login.defs 
+  269  useradd -m -p $(openssl passwd admin@123) user5
+  270  tail -1 /etc/shadow
+  271  vi /etc/login.defs 
+  272  tail -1 /etc/shadow
+  273  userdel -r user5
+  274  useradd -m -p $(openssl passwd admin@123) user5
+  275  tail -1 /etc/shadow
+  276  clear
+  277  groupadd arichgp
+  278  tail /etc/group
+  279  gpasswd arichgp
+  280  tail /etc/gshadow
+  281  groupmod -n ctsgp arichgp
+  282  tail /etc/group
+  283  tail /etc/gshadow
+  284  useradd ara
+  285  gpasswd -a ara ctsgp
+  286  tail /etc/group
+  287  useradd xyz1
+  288  useradd xyz2
+  289  gpasswd -M xyz1,xyz2 ctsgp
+  290  tail /etc/group
+  291  gpasswd -M ara,xyz1,xyz2 ctsgp
+  292  tail /etc/group
+  293  useradd xyz3
+  294  tail /etc/paswd
+  295  tail /etc/passwd
+  296  tail /etc/group
+  297  usermod -G ctsgp xyz3
+  298  tail /etc/group
+  299  useradd xyz4
+  300  su - xyz4
+  301  usermod -g ctsgp xyz4
+  302  su - xyz4
+  303  useradd aaa
+  304  useradd bbb
+  305  useradd ccc
+  306  usermod -G ctsgp aaa,bbb,ccc
+  307  usermod --help
+  308  usermod -a  aaa,bbb,ccc  ctsgp
+  309  usermod -a  aaa,bbb,ccc  
+  310  usermod -a  aaa,bbb,ccc ctsgp 
+  311  man usermod
+  312  info usermod
+  313  usermod -a  -G aaa,bbb,ccc  ctsgp
+  314  usermod -a  -G   ctsgp aaa,bbb,ccc
+  315  usermod -a  -G   ctsgp aaa
+  316  usermod -a  -G   ctsgp bbb
+  317  usermod -a  -G   ctsgp ccc
+  318  cat /etc/group
+  319  gpasswd -d xyz3 ctsgp
+  320  cat /etc/group
+  321  cd /
+  322  mkdir lab
+  323  ls
+  324  cd lab
+  325  cat > file1
+  326  ls -la
+  327  chmod 777 /lab
+  328  ls /
+  329  ls -la
+  330  chgrp user5 file1
+  331  ls -la
+  332  touch file2
+  333  ll
+  334  chown user7 file2
+  335  ll
+  336  ls -la /dev/console /dev/sda
+  337  ls -la /etc /etc/motd /etc/hosts
+  338  ls -ld /etc /etc/motd /etc/hosts
+  339  clear
+  340  cat > demo
+  341  ll
+  342  su user5
+  343  usermod 646 demo
+  344  chmod  646 demo
+  345  ll
+  346  su user5
+  347  chmod  647 demo
+  348  ll
+  349  mkdir cis
+  350  cd cis 
+  351  touch a b c d
+  352  mkdir 1 2 3 4
+  353  ll
+  354  cat > new1
+  355  clear
+  356  cd ..
+  357  ll
+  358  su user5
+  359  chmod 757 cis
+  360  ll
+  361  su user5
+  362  chmod 756 cis
+  363  su user5
+  364  chmod 753 cis
+  365  ll
+  366  su user5
+  367  chmod 757 cis
+  368  ll
+  369  cat > file3
+  370  ll
+  371  chmod u+x file3
+  372  ll
+  373  chmod g+w file3
+  374  ll
+  375  chmod o-r file3
+  376  ll
+  377  chmod g-r file3
+  378  ll
+  379  chmod a+r file3
+  380  ll
+  381  chmod +x file3
+  382  ll
+  383  touch file4
+  384  ll
+  385  chmod u=r file4
+  386  ll
+  387  touch file5
+  388  ll
+  389  chmod u-rwx,ug=rw,o=x file5
+  390  ll
+  391  touch file6
+  392  ll
+  393  chmod 777 file6
+  394  ll
+  395  touch file7
+  396  chmod 664 file7
+  397  ll
+  398  touch file8
+  399  ll
+  400  chmod 750 file8
+  401  ll
+  402  umask
+  403  id
+  404  touch aaa
+  405  ll
+  406  mkdir 111
+  407  ll
+  408  su user5
+  409  ls
+  410  useradd pqr1
+  411  useradd pqr2
+  412  useradd pqr3
+  413  useradd pqr4
+  414  useradd pqr5
+  415  groupadd acl
+  416  gpasswd -M pqr1,pqr2,pqr3,pqr4,pqr5 acl
+  417  grep acl /etc/group
+  418  cat > manu
+  419  ll
+  420  setfacl -m u:pqr1:rw manu
+  421  setfacl -m u:pqr2:r manu
+  422  setfacl -m u:pqr3:0 manu
+  423  getfacl manu
+  424  su pqr1
+  425  su pqr2
+  426  su pqr3
+  427  su pqr4
+  428  setfacl -m g:acl:rw manu
+  429  getfacl
+  430  getfacl manu
+  431  su pqr4
+  432  su pqr3
+  433  setfacl -X u:pqr2 manu
+  434  setfacl -x u:pqr2 manu
+  435  getfacl
+  436  getfacl manu
+  437  su par2
+  438  su pqr2
+  439  clear
+  440  fdsik -l
+  441  fdisk -l
+  442  df -lh
+  443  fdisk /dev/sda
+  444  partprobe /dev/sda
+  445  fdisk -l
+  446  mkfs.ext4 /dev/sda3
+  447  mkfs.vfat /dev/sda5
+  448  mkfs.vfat /dev/sda4
+  449  blockid /dev/sda3
+  450  blkid /dev/sda3
+  451  blkid /dev/sda5
+  452  cd /dev/sda3
+  453  mkdir /abcd
+  454  cd /abcd
+  455  ls
+  456  ls -la
+  457  cd
+  458  mount /dev/sda3 /abcd
+  459  cd /abcd
+  460  ls
+  461  touch 1 2 3 4 5
+  462  mkdir a b c d e 
+  463  ls
+  464  cd
+  465  umount /abcd
+  466  cd /abcd
+  467  ls
+  468  mount /dev/sda3 /abcd
+  469  ls
+  470  cd
+  471  cd /abcd
+  472  ls
+  473  mount
+  474  vi /etc/
+  475  vi /etc/mtab
+  476  free -m
+  477  fdisk /dev/sda
+  478  partprobe /dev/sda
+  479  fdisk -l
+  480  mkswap /dev/sda6
+  481  blkid /dev/sda6
+  482  free -m
+  483  swapon /dev/sda6
+  484  free -m
+  485  swapon -s
+  486  swapoff /dev/sda6
+  487  free -m
+  488  fdisk -l
+  489  fdisk /dev/sda
+  490  partprobe /dev/sda
+  491  mkfs.ext4 /dev/sda7
+  492  blkid /dev/sda7
+  493  e2label /dev/sda7 RHCE
+  494  e2label /dev/sda7
+  495  mkdir /soft
+  496  chmod 777 /soft
+  497  mount --label=RHCE  /soft
+  498  mount
+  499  ls /soft
+  500  vi /etc/fstab
+  501  df
+  502  df -lh
+  503  blockdev --getbsz /dev/sda7
+  504  blockdev --getbsz /dev/sda1
+  505  blockdev --getbsz /dev/sda2
+  506  blockdev --getbsz /dev/sda3
+  507  blockdev --getbsz /dev/sda6
+  508  hostname
+  509  hostname abc.new.com
+  510  hostname
+  511  vi /etc/hostname 
+  512  vi /etc/hosts
+  513  ifconfig
+  514  ifconfig | inet
+  515  ifconfig | grep inet
+  516  clear
+  517  ifconfig
+  518  ifconfig ens33 192.168.0.241 netmask 255.255.255.0
+  519  ifconfig
+  520  cat /etc/hosts
+  521  nmtui
+  522  ifconfig
+  523  ping 192.168.0.1
+  524  ifconfig
+  525  ping 192.168.0.201
+  526  ping sys1.linux.com
+  527  ping sys1
+  528  vi /etc/hosts
+  529  ping sys3.linux.com
+  530  systemctl status network
+  531  systemctl restart network
+  532  systemctl status network
+  533  systemctl disable network
+  534  systemctl status network
+  535  systemctl enable network
+  536  systemctl status network
+  537  ifconfig
+  538  systemctl disable network
+  539  ifconfig
+  540  ping 192.168.0.1
+  541  systemctl enable network
+  542  cd /etc/sysconfig/network-scripts/
+  543  ls
+  544  cat ifcfg-ens33 
+  545  vi ifcfg-ens33 
+  546  systemctl restart network
+  547  ifconfig
+  548  vi ifcfg-ens33 
+  549  ifconfig
+  550  systemctl restart network
+  551  ifconfig
+  552  ifdown ens33
+  553  ifconfig
+  554  ifup ens33
+  555  ifconfig
+  556  cd
+  557  clear
+  558  rpm -q zip
+  559  rpm -e zip --nodeps
+  560  rpm -q zip
+  561  mount /dev/sr0 /media
+  562  cd /media
+  563  touch qqq
+  564  ls
+  565  cd packages
+  566  cd Packages
+  567  ls
+  568  rpm -ivh zip*.rpm
+  569  rpm -q zip
+  570  rpm -q vsftpd*
+  571  rpm -q vsftpd
+  572  rpm -q ftp*
+  573  rpm -ivh vsftpd*.rpm
+  574  rpm -ivh vsftpd*.rpm --force
+  575  systemctl status vsftpd
+  576  systemctl enable vsftpd
+  577  systemctl restart vsftpd
+  578  systemctl status vsftpd
+  579  rpm -e ftp
+  580  rpm -e ftp*
+  581  rpm -ivh ftp* 
+  582  rpm -e ftp*
+  583  rpm -e ftp
+  584  rpm -e ftp*
+  585  systemctl status ftp
+  586  systemctl status ftpd
+  587  ftp
+  588  rpm -ivh ftp* --force
+  589  rpm -e ftp*
+  590  rpm -e ftp
+  591  ftp
+  592  ftp 192.168.0.201
+  593  ls ftp*
+  594  rpm -e ftp*
+  595  rpm -e ftp
+  596  rpm -e ftp*
+  597  rpm -ivh ftp* --force
+  598  rpm -q ftp*
+  599  rpm -q ftp
+  600  ftp
+  601  systemctl status ftp
+  602  systemctl status ftp*
+  603  ftp
+  604  systemctl status firewalld
+  605  systemctl disable firewalld
+  606  systemctl stop firewalld
+  607  cd /media
+  608  ls
+  609  cp -rvf * /var/ftp/pub/
+  610  createrepo --database /var/ftp/pub
+  611  history
+  612  rpm -ivh deltarpm*
+  613  cd Packages/
+  614  rpm -ivh deltarpm*
+  615  rpm -ivh createrepo
+  616  rpm -ivh createrepo*
+  617  rpm -ivh python-deltarpm*
+  618  vi /etc/yum.repos.d/myyumserver.repo
+  619  cd
+  620  ls
+  621  yum install kdebase -y
+  622  ftp
+  623  vi /etc/yum.repos.d/myyumserver.repo
+  624  createrepo --database /var/ftp/pub/Packages/
+  625  yum install kdebase -y
+  626  clear
+  627  rpm -q nfs*
+  628  rpm -qa nfs*
+  629  yum install nfs* 
+  630  mkdir /cts
+  631  cd /cts
+  632  ls
+  633  touch 1 2 3 4 5
+  634  mkdir a b c d e 
+  635  ls
+  636  chmod 777 /cts
+  637  vi /etc/exports
+  638  systemctl status nfs
+  639  systemctl enable nfs
+  640  systemctl restart nfs
+  641  systemctl status nfs
+  642  vi /etc/exports
+  643  systemctl restart nfs
+  644  systemctl status nfs
+  645  ls
+  646  yum install httpd* -y
+  647  systemctl status httpd*
+  648  systemctl status httpd
+  649  systemctl enable httpd
+  650  systemctl status httpd
+  651  systemctl restart httpd
+  652  systemctl status httpd
+  653  history
+  654  cd
+  655  history > "aravinda linux lab steps.txt"
